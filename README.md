@@ -10,3 +10,7 @@ Using A3C & DQN for car racing environment
 3. Reinforcement Learning for a Simple Racing Game: [link](https://web.stanford.edu/class/aa228/reports/2018/final150.pdf)
 4. Reinforcement learning algorithms A2C, A3C and DQN: [github](https://github.com/novicasarenac/car-racing-rl)
 5. A3C course in chinese: [Youtube](https://www.youtube.com/watch?v=O79Ic8XBzvw)
+
+
+## Running
+Enter the folder and do what it ask you to do in readme
