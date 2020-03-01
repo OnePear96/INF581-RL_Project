@@ -11,6 +11,7 @@ Using A3C & DQN for car racing environment
 4. Reinforcement learning algorithms A2C, A3C and DQN: [github](https://github.com/novicasarenac/car-racing-rl)
 5. A3C course in chinese: [Youtube](https://www.youtube.com/watch?v=O79Ic8XBzvw)
 6. A3C tutorial: [Simple Reinforcement Learning with Tensorflow](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2)
+7. Self-driving toy car using the Asynchronous Advantage Actor-Critic algorithm: [tutor](https://www.endpoint.com/blog/2018/08/29/self-driving-toy-car-using-the-a3c-algorithm)
 
 
 ## Running
