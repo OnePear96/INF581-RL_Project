@@ -2,7 +2,6 @@
 
 Implementation of Reinforcement Learning algorithms in [CarRacing-v0](https://gym.openai.com/envs/CarRacing-v0/) environment. Implemented algorithms:
 * Deep Q-Network (DQN)
-* Advantage Actor Critic (A2C)
 * Asynchronous Advantage Actor Critic (A3C)
 
 ## Setup and running ##
@@ -20,6 +19,6 @@ python -m run --<action> -m=<model>
 ```
 Possible values for parameter `action` are: `train`, `inference` and `evaluate`.
 
-Possible values for parameter `model` are: `dqn`, `a2c` and `a3c`.
+Possible values for parameter `model` are: `dqn` and `a3c`.
 
 Hyperparameters can be changed in .json files in `/params` directory.
