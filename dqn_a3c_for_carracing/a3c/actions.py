@@ -2,9 +2,9 @@ import torch
 import numpy as np
 
 
-LEFT = [-1.0, 0.0, 0.0]
-RIGHT = [1.0, 0.0, 0.0]
-GAS = [0.0, 1.0, 0.0]
+LEFT = [-0.5, 0.0, 0.0]
+RIGHT = [0.5, 0.0, 0.0]
+GAS = [0.0, 0.5, 0.0]
 BRAKE = [0.0, 0.0, 1.0]
 
 
@@ -24,4 +24,5 @@ def get_actions(probs):
     for i in range(probs.size(0)):
         action = ACTIONS[indices[i]]
         actions[i] = float(values[i]) * np.array(action)
+    print("actions:",actions)
     return actions

@@ -31,6 +31,7 @@ class Worker(mp.Process):
         for update in range(int(num_of_updates)):
             self.storage.reset_storage()
             # synchronize with global model
+            R = 0
             self.model.load_state_dict(self.global_model.state_dict())
             for step in range(self.params.steps_per_update):
                 probs, log_probs, value = self.model(self.current_observation)
@@ -38,6 +39,7 @@ class Worker(mp.Process):
                 action_log_prob, entropy = self.compute_action_log_and_entropy(probs, log_probs)
 
                 state, reward, done = self.environment.step(action)
+                R += reward
                 if done:
                     state = self.environment.reset()
                 done = torch.Tensor([done])
@@ -69,6 +71,7 @@ class Worker(mp.Process):
                 print('Process: {}. Update: {}. Loss: {}'.format(self.process_num,
                                                                  update,
                                                                  loss))
+                print('reward:', R)
 
     def compute_action_log_and_entropy(self, probs, log_probs):
         values, indices = probs.max(1)
