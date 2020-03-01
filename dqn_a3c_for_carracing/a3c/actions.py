@@ -24,5 +24,5 @@ def get_actions(probs):
     for i in range(probs.size(0)):
         action = ACTIONS[indices[i]]
         actions[i] = float(values[i]) * np.array(action)
-    print("actions:",actions)
+    # print("actions:",actions)
     return actions
