@@ -2,8 +2,8 @@ import torch
 import numpy as np
 
 
-LEFT = [-0.5, 0.0, 0.0]
-RIGHT = [0.5, 0.0, 0.0]
+LEFT = [-0.8, 0.0, 0.0]
+RIGHT = [0.8, 0.0, 0.0]
 GAS = [0.0, 0.5, 0.0]
 BRAKE = [0.0, 0.0, 0.8]
 
